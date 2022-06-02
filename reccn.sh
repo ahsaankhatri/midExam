@@ -51,7 +51,7 @@ echo "-----------------------------------------------------------------"
 input="/home/kali/Recconiasance/domains.txt"
 while IFS= read -r line
 do
-#  nslookup $line >> ipaddress.txt 
+nslookup $line >> ipaddress.txt 
 done < "$input"
 echo "-----------------------------------------------------------------"
 echo
